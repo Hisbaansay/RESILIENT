@@ -21,15 +21,15 @@ function init() {
 
       parentDiv?.insertBefore(app, parentChild);
 
-      const container = document.getElementById("root");
-      const root = createRoot(container!);
-
+      const container  = document.getElementById("root") as HTMLElement;
+      const root = createRoot(container);
+      
       root.render(
-        <ChakraProvider>
+        // <ChakraProvider>
           <React.StrictMode>
             <App tweetText={tweet.innerText} />
           </React.StrictMode>
-        </ChakraProvider>
+        // </ChakraProvider>
       );
     }, 2000);
   }
@@ -38,7 +38,8 @@ function init() {
 
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
-      if (mutation.addedNodes.length > 0) {
+      if (mutation.addedNodes.length > 0 && 
+        mutation.addedNodes.length < 2) {
         appendFactCheckButton();
       }
     });

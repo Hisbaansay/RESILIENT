@@ -1,8 +1,8 @@
 # Insight - Twitter Fact-Checker
-Fact-Check tweets instantly with Insight
+Fact-Check tweets instantly with Resilient
 
 ## Introduction
-Insight is a chrome extension that allows users to fact-check tweets in real-time. The extension has an easy-to-use interface. A fact-check button is rendered when a user interacts with a tweet, and clicking the button fact-checks the tweet content using the <strong>OpenAI GPT-3.5 API.</strong>
+Resilient is a chrome extension that allows users to fact-check tweets in real-time. The extension has an easy-to-use interface. A fact-check button is rendered when a user interacts with a tweet, and clicking the button fact-checks the tweet content using the <strong>OpenAI GPT-3.5 API.</strong>
 
 ## Tech Stack
 - React (Vite)

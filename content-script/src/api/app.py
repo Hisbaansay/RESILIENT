@@ -6,6 +6,7 @@ from langchain.prompts.chat import (
 )
 
 app = Flask(__name__)
+app.run(debug=True)
 
 @app.route('/', methods = ['POST'])
 def fact_check_tweet():
